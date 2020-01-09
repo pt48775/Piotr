@@ -1,0 +1,25 @@
+1. Napisz funkcję sprawdząjącą czy liczba jest pierwsza. Funkcja powinna jako argument przyjmować liczbę, a zwracać wartość True/False
+2. Wygeneruj 30 liczb pierwszych i zapisz je na liście
+3.Napisz funkcję, która jakoa argument przyjmuje listę liczb, a zwraca listę pierwiastków liczb z pierwszej listy od tyłu
+
+q = []
+for i in range (101):
+    if i%2==0:
+        q.append(i)
+#    print (a)
+print (q)
+
+
+def dzielniki (a):
+    w = []
+    for r in range (1,a+1):
+        if a%r == 0:
+            w.append (r)
+    return w
+
+def dzielniki_v2 (a):
+    w = []
+    for r in range (1,a+1):
+        if a%r == 0 and r%2 == 0 :
+            w.append (r)
+    return w
